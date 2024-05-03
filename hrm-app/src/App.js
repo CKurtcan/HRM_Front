@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Home from './pages/Home'
 import User from './pages/User'
+import UserDemo from './pages/UserDemo'
 
 function App() {
   const checkToken  =()=>{
@@ -21,6 +22,7 @@ function App() {
         <Route path='/login'  element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/user' element={checkToken() ? <User /> : <Login />} />
+        <Route path='/userdemo' element={<UserDemo/>}/>
       </Routes>
     </BrowserRouter>
   );

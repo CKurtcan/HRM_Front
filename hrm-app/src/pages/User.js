@@ -1,6 +1,10 @@
 function user(){
     return(
-        <h1> Cem mülakat nasıl geçti?</h1>
+        <div className='container border'>
+            <div>
+
+            </div>
+        </div>
     )
 }
 
